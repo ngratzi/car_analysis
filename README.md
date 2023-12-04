@@ -3,7 +3,7 @@
 [Link to Jupyter Notebook](analysis.ipynb)
 
 ## Dataset and Insights
-Vehicle data provided included the following attributes. Dataset 
+Vehicle data provided included the following attributes. 
 
 | Feature       | Type    |
 |---------------|---------|
@@ -25,6 +25,11 @@ Vehicle data provided included the following attributes. Dataset
 | paint_color   | nominal |
 | state         | nominal |
 
+**Average Price**: $20,472.29
+**Average Odometer**: 89,554.32 Miles
+**Average Age**: 10.73 years
+
+
 
 ## Key Influencing Factors
 Our analysis revealed the following key factors that significantly influence vehicle pricing:
@@ -38,7 +43,11 @@ The newer vehicles on average had the highest value. Value start to immediatly d
 Avoid purchasing vehicles in fair or salvage condition. These vehicles had the lowest value and likely not a large market seeking them. 
 
 #### Fuel & Engine (Cylinders)
-Diesel and Electric vehicles on average had the highest value. Likely due to the large engine (diesel) and large battery (electric) for operation. Also could be impacted by the fuel economy of these vehicles. Fuel economy data was not present in the dataset.
+Diesel and Electric vehicles on average had the highest value. Likely due to the large engine (diesel) and large battery (electric) for operation. On average, 10 cylinder engines tend to hold their value better than others over a 20 year period. Also could be impacted by the fuel economy of these vehicles. Fuel economy data was not present in the dataset.
+
+A predictive model indicated that an 8 cylinder engine increased the value of a vehicle as opposed to a 4 cylinder engine tended to decrease the value of a vehicle.
+
+![Description of image](images/value_over_time.png)
 
 #### Odometer (Milage)
 A vehicles value on average significantly drops as odometer increases. Odometer readings give insight on the life left in the vehicle. Higher the value, less life left in the vehicle. Customers want to but a vehicle what will last a while.
@@ -47,14 +56,13 @@ A vehicles value on average significantly drops as odometer increases. Odometer 
 
 ## Strategic Insights
 
-Based on the model's insights, it is recommended that focusing on newer, low-mileage, diesel or electric vehicles will lead to aquiring higher valued vehicles.
-
-Consider prioritizing vehicles based on age, condition, odometer, and engine size.
+Based on the model's insights, it is recommended that focusing on newer, low-mileage, diesel or electric vehicles will lead to aquiring higher valued vehicles for inventory.
 
 ## Limitations and Further Analysis
-Expanding the dataset to include more attributes such as fuel economy. I gathered that this dataset could provide more comprehensive insights if more granular data was privided.
+Expanding the dataset to include more attributes such as fuel economy, vehicle history, etc. would lead to more informed insights.
 
-A lot of this data was removed due to missing data. I have also found that spot checking deemed some rows inacurate leading me to question the validity of the data. 
+A lot of this data was removed due to missing values. I have also found that spot checking deemed some rows inacurate leading me to question the validity of the data. A better quality dataset would lead to better results.
 
-## Conclusion
-TODO
+Fine tuning a predictive model with these additional features would lead to a better insights.
+
+
